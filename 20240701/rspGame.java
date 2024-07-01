@@ -119,9 +119,8 @@ public class rspGame {
 		
 		System.out.println("총 결과");
 		for(int i = 0; i < roundResults.size(); i++) {
-			System.out.println("Round " + (i+1));
-			
-			
+			RoundResult roundresult = roundResults.get(i);
+			System.out.printf("라운드: %d, 사용자: %s, 컴퓨터 %s, 결과: %s\n", (i+1), roundresult.getUser(), roundresult.getComputer(), roundresult.getResult());
 		}
 	}
 }
